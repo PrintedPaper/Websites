@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.profile{
+    width: 460px;
+    background: rgba(0, 0, 0, 0.4);
+    padding:40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    color: white;
+    font-family: sans-serif;
+    
+    border-style: outset;
+    border-width: 5px;
+    border-radius: 5px;
+    border-color: pink;
+    
+    animation: borderColorAnimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+body{
+    height: 100vh;
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image{
+    width: 400px;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.box h1{
+    font-size: 40px;
+    font-weight: 100;
+    letter-spacing: 6px;
+}
+.box h2{
+    font-size: 20px;
+    font-weight: 50;
+    letter-spacing: 5px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+.box a{
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+}
+.box a :hover{
+    color: lightblue;
+}
+@keyframes borderColorAnimation {
+    0%{border-color: magenta;}
+    10%{border-color: purple;}
+    15%{border-color: orange;}
+    20%{border-color: blue;}
+    25%{border-color: violet;}
+    30%{border-color: red;}
+    35%{border-color: yellow;}
+    40%{border-color: lightgreen;}
+    45%{border-color: green;}
+    50%{border-color: brown;}
+    55%{border-color: yellowgreen;}
+    60%{border-color: indigo;}
+    65%{border-color: aqua;}
+    70%{border-color: tomato;}
+    75%{border-color: plum;}
+    80%{border-color: peru;}
+    85%{border-color: teal;}
+    90%{border-color: turquoise;}
+    95%{border-color: slateblue;}
+    100%{border-color: pink;}
+}

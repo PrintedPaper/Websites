@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    padding: 0;
+    /*background: url() no-repeat;*/
+    /*background-size: cover;*/
+
+}
+
+.box{
+    width: 450px;
+    background: rgba(0, 0, 0, 0);
+    padding: 40px;
+    text-align: center;
+    animation: borderColorAnimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+html{
+    /*background-image: url("https://www.pngkey.com/png/full/124-1248283_unicorn-rainbow-clouds-png.png");*/
+    background-color: lightslategrey;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+#p1{
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 19px;
+    border-style: outset;
+    padding: 5px;
+    border-color: pink;
+    border-width: 5px;
+    border-radius: 5px;
+    width: 1220px;
+
+    animation: borderColorAnimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes borderColorAnimation{
+    0%{border-color: magenta;}
+    10%{border-color: purple;}
+    15%{border-color: orange;}
+    20%{border-color: blue;}
+    25%{border-color: violet;}
+    30%{border-color: red;}
+    35%{border-color: yellow;}
+    40%{border-color: lightgreen;}
+    45%{border-color: green;}
+    50%{border-color: brown;}
+    55%{border-color: yellowgreen;}
+    60%{border-color: floralwhite;}
+    65%{border-color: aqua;}
+    70%{border-color: tomato;}
+    75%{border-color: plum;}
+    80%{border-color: peru;}
+    85%{border-color: teal;}
+    90%{border-color: turquoise;}
+    95%{border-color: slateblue;}
+    100%{border-color: antiquewhite;}
+}
+
+button:hover{
+    background-color: burlywood;
+    color: whitesmoke;
+}
+button:active{
+    background-color: white;
+}
+
+#heading1{
+    background: linear-gradient(red,orange,yellow,blue,violet,purple);
+    width: 195px;
+    margin: 20px;
+    margin-top: -8px;
+    text-shadow: 0px 0px 3px white;
+}
