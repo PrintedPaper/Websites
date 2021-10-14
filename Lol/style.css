@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: grey;
+}
+
+.profile{
+    width: 550px;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+    margin-top: 5%;
+    
+    border-width: 10px;
+    border-radius: 10px;
+    border-color: beige;
+    border-style: outset;
+
+    animation: borderAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+    font-family:'Segoe UI', sans-serif;
+}
+@keyframes borderAnimation {
+    50%{border-color: rgb(3, 3, 70);}
+    75%{border-color: rgb(0, 248, 41);}
+    100%{border-color: brown;}
+}
+.image h1{
+    font-size: 60;
+    font-weight: 90;
+    letter-spacing: 15;
+    text-align: center;
+    color: aqua;
+
+}
+
+.image h2{
+    font-size: 30;
+    font-weight: 100;
+    letter-spacing: 8;
+    text-align: center;
+    color: palevioletred;
+
+}
+.ul{
+    padding: 0;
+    margin: 0;
+}
+.link :hover{
+    color: azure;
+}
+.link{
+    font-size: 15;
+    padding: 0;
+    
+}
+.button :hover{
+    color: blue;
+}
+.test{
+    color: red;
+    text-align: center;
+    display: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+a{
+    font-size: 40px;
+    text-decoration: none;
+    color: aquamarine;
+}
+#myDiv{
+    background-color: grey;
+    width: 400px;
+    height: 400px;
+    cursor: pointer;
+}
