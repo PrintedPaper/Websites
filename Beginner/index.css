@@ -16,8 +16,6 @@ body{
     cursor: pointer;
 }
 
-#button{
-    color: aliceblue;
-    border: 40px;
-    border-style: outset;
+button{
+    color: red;
 }
