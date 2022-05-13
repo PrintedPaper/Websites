@@ -5,6 +5,7 @@
     text-decoration: none;
 }
 
+
 .profile{
     width: 460px;
     background: rgba(0, 0, 0, 0.4);
@@ -51,6 +52,8 @@ body{
     font-weight: 50;
     letter-spacing: 5px;
 }
+
+
 
 ul{
     margin: 0;
