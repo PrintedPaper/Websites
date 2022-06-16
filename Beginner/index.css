@@ -4,23 +4,83 @@
     margin: 0;
     padding: 0;
 }
+.logo h2{
+    color: white;
+    font-size: 24px;
+}
 
-.title h3{
+.navItems{
+    display: flex;
+    justify-content:center;
+    align-items: flex-end;
+    gap: 30px;
+    font-size: 20px;
+    list-style: none;
+}
+
+.subTitle{
+    position: absolute;
+    left: 5%;
+    top: 15%;
+}
+
+.subTitle h1{
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    
+}
+.description{
+    font-size: 18px;
+}
+
+.signUp button{
+    background-color: 3882F6;
     color: white;
 }
 
-.nav{
-    font-size: 20px;
+.image{
+    position: absolute;
+    left: 200%;
 }
 
-.title{
+.stuff{
+    position: absolute;
+    top: 38%;
+}
+
+.words{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
+    list-style: none;
 }
 
-.title li{
-    display: inline;
-    padding: 30px;
+.quote{
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    font-size: 20px;
+    font-style: italic;
+    border: black;
+    border-style: solid;
+}
+
+.notification{
+    position: absolute;
+    top: 80%;
+    color: white;
+}
+
+.notification h3{
+    font-size: 40px;
+}
+
+.notification h4{
+    font-size: 30px;
+}
+
+.notification button{
+    color: white;
+    background-color: 3882F6;
+    font-size: large;
+    display: flex;
 }
