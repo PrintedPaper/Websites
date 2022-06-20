@@ -1,56 +1,58 @@
-function game(){
-    const randNum = Math.floor(Math.random() * 3) + 1
+const choices = ["rock", "paper", "scissors"]
 
-    switch(randNum){
-        case 1:
-            computerSelection == "Rock";
-            break;
-        case 2:
-            computerSelection == "Scissors";
-            break;
-        case 3:
-            computerSelection == "Paper";
-            break;
+function game(){
+    for (let i = 0; i <= 5; i++){
+        playRound()
     }
 }
 
-function playRound(playerSelection, computerSelection){
-    playerSelection = prompt("Enter a string: ")
-    if (playerSelection == "Rock"){
-        if(computerSelection == "Paper"){
-            return false
-        }
-        else{
-            return true
-        }
-    } 
-    else if (playerSelection == "Paper"){
-        if(computerSelection == "Scissors"){
-            console.log(computerSelection)
-            console.log("Computer wins")
-        }
-        else{
-            console.log("You win")
-        }
+function playRound(){
+    const playerChoice = playerSelection()
+    const computerChoice = computerSelection()
+    const winner = checkWinner(playerChoice,computerChoice)
+    console.log(winner)
+}
+
+function playerSelection(){
+    let input = prompt("Rock, Paper, or Scissors?")
+    while(input == null){
+        input = prompt("Rock, Paper, or Scissors?")
     }
-    else if (playerSelection == "Scissors"){
-        if(computerSelection == "Rock"){
-            console.log(computerSelection)
-            console.log("Computer wins")
-        }
-        else{
-            console.log("You win")
-        }
+    input = input.toLowerCase()
+    let check = validateInput(input)
+    while(check == false){
+        input = prompt("Type Rock, Paper, Scissors. Spelling needs to be exact")
     }
-    else if(playerSelection == computerSelection){
-        console.log(computerSelection)
-        console.log("Tied")
+    while (input == null){
+        input = prompt("Rock, Paper, or Scissors?")
+    }
+    input = input.toLowerCase()
+    check = validateInput(input)
+    return input
+}
+
+function computerSelection(){
+    return choices[Math.floor(Math.random()*choices.length)]
+}
+
+function validateInput(choice){
+    return choices.includes(choice)
+}
+
+function checkWinner(choiceP, choiceC){
+    if(choiceP == choiceC){
+        return 'Tie'
+    }
+    else if(
+        (choiceP === "rock" && choiceC == "scissors") || 
+        (choiceP === "paper" && choiceC == "rock") ||
+        (choiceP === "scissors" && choiceC == "paper")
+        ){
+        return 'Player'
     }
     else{
-        console.log("Invalid")
+        return 'Computer'
     }
 }
 
-let computerSelection;
-let playerSelection; 
-console.log(playRound(playerSelection, computerSelection))
+game()
